@@ -6,6 +6,13 @@ import Hello from './Components/login_function.js';
 import Login from './Components/login_class.js';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+      this.state = {
+        isLogin: false,
+      }    
+  }
+
   render() {
     return (
       <div className="App">
