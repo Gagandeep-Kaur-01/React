@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Login from './Components/login_function.js'
+
 class App extends Component {
   render() {
     return (
@@ -18,6 +20,8 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
+
+            <Login/>
           </a>
         </header>
       </div>
