@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Login from './Components/login_function.js'
+import Hello from './Components/login_function.js';
+import Login from './Components/login_class.js';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           >
             Learn React
 
+            <Hello/>
             <Login/>
           </a>
         </header>
