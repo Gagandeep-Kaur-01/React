@@ -1,3 +1,5 @@
+// usage of (...) operator 
+
 /*
 Rest Operator is used to handle function parameters. It uses three dots as its syntax (i.e …).
 */
@@ -15,3 +17,5 @@ A function's last parameter can be prefixed with
 ... which will cause all remaining (user supplied) arguments to be placed within a "standard" JavaScript array
 Only the last parameter can be a "rest parameter".
 */
+
+
