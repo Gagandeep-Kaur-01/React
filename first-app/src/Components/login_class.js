@@ -11,9 +11,16 @@ class Login extends React.Component {
     
   render() {
     return (
-      <div>
-      <h2>Is Login: {this.props.isLogin}</h2>  
-      <h3>{this.props.value}!</h3>      
+      <div>       
+      <h3>{this.props.value}!</h3>  
+
+      <a href="#" onclick="console.log('The link was clicked.');
+      return false">Click me</a> <br></br>
+
+      <button onClick= {this.handleClick}>
+       {this.state.isLogin ? 'ON' : 'OFF'}
+      </button> 
+    
     </div> 
 
     ); 

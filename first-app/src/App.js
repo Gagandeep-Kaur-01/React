@@ -10,8 +10,15 @@ class App extends Component {
     super(props);
       this.state = {
         isLogin: 'false',
-      }    
+      }; 
   }
+
+  handleClick() {
+    this.setState(state => ({
+      isLogin: !state.isLogin
+    }));
+  }
+
 
   render() {
     const greeting = 'Welcome to React'; 
