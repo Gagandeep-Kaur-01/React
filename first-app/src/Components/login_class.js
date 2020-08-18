@@ -11,7 +11,10 @@ class Login extends React.Component {
     
   render() {
     return (
-        <h3> Login Page</h3>
+      <div>
+      <h2>Is Login: {this.props.isLogin}</h2>        
+    </div> 
+
     ); 
     
   }

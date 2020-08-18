@@ -9,11 +9,12 @@ class App extends Component {
   constructor(props){
     super(props);
       this.state = {
-        isLogin: false,
+        isLogin: 'false',
       }    
   }
 
   render() {
+    const greeting = 'Welcome to React'; 
     return (
       <div className="App">
         <header className="App-header">
@@ -28,12 +29,16 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
+            </a>
 
-            <Hello/>
-            <Login/>
-          </a>
+            <h1>{greeting}</h1>
+            <Login isLogin= {this.state.isLogin}/>    
+            <Hello/>      
+          
         </header>
-      </div>
+      </div>          
+            
+          
     );
   }
 }
