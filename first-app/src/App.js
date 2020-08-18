@@ -4,14 +4,25 @@ import './App.css';
 
 import Hello from './Components/login_function.js';
 import Login from './Components/login_class.js';
+import A from './Components/A.js';
+import B from './Components/B.js';
+
 
 class App extends Component {
   constructor(props){
     super(props);
       this.state = {
         isLogin: 'false',
+        inputValue: "",
       }; 
   }
+
+  handleChange = event => {
+    this.setState({
+      inputValue: event.target.value
+    });
+  };
+
 
   handleClick() {
     this.setState(state => ({
@@ -42,6 +53,11 @@ class App extends Component {
              
             <Login value="Login Form"/>  
             <Hello/>      
+
+            <div onChange={this.handleChange}>
+              <A/>
+              <B text= {this.state.inputValue}/>
+            </div>
           
         </header>
       </div>          
