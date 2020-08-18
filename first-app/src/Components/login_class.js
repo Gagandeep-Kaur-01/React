@@ -20,3 +20,10 @@ class Login extends React.Component {
   }
 }
 export default Login;
+
+/*
+•	Props is also an object that holds information to control the behavior of that particular component, sounds familiar to State.
+•	Basically props are used to pass data from component to component. 
+•	There is no way passing props from a child to a parent component.
+•	Everything incoming is props, everything managed by the component itself is state. 
+*/
