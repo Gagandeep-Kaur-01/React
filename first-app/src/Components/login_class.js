@@ -12,7 +12,8 @@ class Login extends React.Component {
   render() {
     return (
       <div>
-      <h2>Is Login: {this.props.isLogin}</h2>        
+      <h2>Is Login: {this.props.isLogin}</h2>  
+      <h3>{this.props.value}!</h3>      
     </div> 
 
     ); 

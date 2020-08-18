@@ -32,7 +32,8 @@ class App extends Component {
             </a>
 
             <h1>{greeting}</h1>
-            <Login isLogin= {this.state.isLogin}/>    
+             
+            <Login value="Login Form"/>  
             <Hello/>      
           
         </header>
