@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Login extends React.Component {
+class Learning extends React.Component {
     constructor(props) {
         super(props);
         this.state={
@@ -27,7 +27,7 @@ class Login extends React.Component {
     
   }
 }
-export default Login;
+export default Learning;
 
 /*
 •	Props is also an object that holds information to control the behavior of that particular component, sounds familiar to State.

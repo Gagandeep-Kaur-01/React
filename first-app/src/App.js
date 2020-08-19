@@ -51,7 +51,7 @@ class App extends Component {
 
             <h1>{greeting}</h1>
              
-            <Login value="Login Form"/>  
+            <Learning value="Login Form"/>  
             <Hello/>      
 
             <div onChange={this.handleChange}>
