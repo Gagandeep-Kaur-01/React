@@ -1,0 +1,30 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+
+  .App {
+    font-family: "Muli", sans-serif;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: #0066f5;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
