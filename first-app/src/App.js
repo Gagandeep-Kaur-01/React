@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Hello from './Components/login_function.js';
-import Login from './Components/login_class.js';
+import Hello from './Components/component_function.js';
+import Login from './Components/component_class.js';
 import A from './Components/A.js';
 import B from './Components/B.js';
 
