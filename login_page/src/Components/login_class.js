@@ -6,11 +6,20 @@ class Login extends React.Component {
   constructor(props) { //accepts props as input
     super(props); //to pass down whatever is being inherited from the parent class
     this.state= {
-      username:'Gagan',
-      password:'qwerty',
+      username:'',
+      password:'',
                
     };
   }  
+
+  handleChange = (event) => {
+    const {name, value} = event.target
+    this.setState(prevState => ({
+      ...prevState,
+      [name] : value
+    }))
+   
+  }
 
   handleSubmit= (event) => {
     event.preventDefault();
@@ -34,11 +43,11 @@ class Login extends React.Component {
                                
              <label for="username">
                Username:
-               <input type="text" value={this.state.username} id="username" name="username"/>
+               <input type="text" value={this.state.username} onChange={this.handleChange} id="username" name="username"/>
              </label> <br/>
              <label for="pass">
                Password:
-               <input type="password" value={this.state.password} id="pass" name="password"/>
+               <input type="password" value={this.state.password} onChange={this.handleChange} id="pass" name="password"/>
              </label> <br>
              </br> <br></br>    
 
