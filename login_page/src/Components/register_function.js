@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useInput } from './hooks/input-hook';
+import { useInput } from './hooks/input-hook.js';
 
 export default function Register(props) {
     const { value: email, bind: bindEmail, reset: resetEmail} = useInput('');
