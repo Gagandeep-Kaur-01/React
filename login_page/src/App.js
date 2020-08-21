@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Login from './Components/login_class.js';
+import Register from './Components/register_function.js';
 
 
 class App extends Component {
@@ -14,6 +15,8 @@ class App extends Component {
       <div className="App">
       
             <h1>{greeting}</h1>  
+
+            <Register/>
 
             <Login value="Login an account" />
        
