@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
       
-            <h1>{greeting}</h1>  
+            <h1 style={{color: "red"}}>{greeting}</h1>  
 
             <Register/>
 
