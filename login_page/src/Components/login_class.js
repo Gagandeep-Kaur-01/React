@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import "./login.css";
+import Welcome from "./Welcome.js"
 
 
 class Login extends React.Component {
