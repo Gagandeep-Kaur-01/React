@@ -6,7 +6,8 @@ import Hello from './Components/component_function.js';
 import Learning from './Components/component_class.js';
 import A from './Components/A.js';
 import B from './Components/B.js';
-import Validation from './Components/validation.js'
+import Validation from './Components/validation.js';
+import Message from './Components/message.js';
 
 
 class App extends Component {
@@ -59,6 +60,8 @@ class App extends Component {
               <A/>
               <B text= {this.state.inputValue}/>
             </div>
+
+            <Message/>
 
             <Validation/>
           
