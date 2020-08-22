@@ -7,6 +7,7 @@ class Learning extends React.Component {
           username:'',
           password:'', 
           isLogin: true,
+          isClick: false,
         };
       }
     
@@ -32,6 +33,10 @@ class Learning extends React.Component {
       <button onClick= {this.handleClick}>
        {this.state.isLogin ? 'ON' : 'OFF'}
       </button> 
+      <br/>
+
+      {this.isClick ? <button>Okk...</button> : <button>Cancel</button>}
+
       <br/>
 
       {renderAuthButton()}         
