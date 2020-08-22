@@ -5,11 +5,23 @@ class Learning extends React.Component {
         super(props);
         this.state={
           username:'',
-          password:''
+          password:'', 
+          isLogin: true,
         };
       }
     
   render() {
+    let {isLogin} = this.state;
+    const renderAuthButton = () => {
+     {
+       if(isLogin){
+         return  <button type="submit">Logout</button>
+       } else {
+         return  <button type="submit">Login</button>
+       }
+     } 
+    }
+
     return (
       <div>       
       <h3>{this.props.value}!</h3>  
@@ -20,6 +32,9 @@ class Learning extends React.Component {
       <button onClick= {this.handleClick}>
        {this.state.isLogin ? 'ON' : 'OFF'}
       </button> 
+      <br/>
+
+      {renderAuthButton()}         
     
     </div> 
 

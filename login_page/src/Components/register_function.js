@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useInput } from './hooks/input-hook.js';
+import Login from "./login_class.js";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export default function Register(props) {
     const { value: email, bind: bindEmail, reset: resetEmail} = useInput('');
@@ -14,10 +16,11 @@ export default function Register(props) {
         resetEmail();
         resetUsername();
         resetPassword();
-        resetAge();
+        resetAge();        
     }
     
     return (
+       <Router>
         <div className="App">       
                                        
             <h2>Create an account.....</h2> 
@@ -44,11 +47,13 @@ export default function Register(props) {
             </label> 
              <br></br>    <br/>
 
-             <button> Register </button>  
+             <Link to={'/Login'}><button> Register </button>  </Link>
+             
 
             </form>            
 
         </div>
+        </Router>
         
       ); 
     
