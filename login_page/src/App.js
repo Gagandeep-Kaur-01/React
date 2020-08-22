@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './Components/login_class.js';
 import Register from './Components/register_function.js';
-
+import Register1 from './Components/register.js';
 
 class App extends Component {
   
@@ -17,6 +17,8 @@ class App extends Component {
             <h1 style={{color: "red"}}>{greeting}</h1>  
 
             <Register/>
+
+            <Register1/>
 
             <Login value="Login an account" />
        
