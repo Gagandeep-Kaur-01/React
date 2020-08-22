@@ -5,5 +5,6 @@
 4. Create two functions showing usage of (...) operator in 2 different ways.
 a) Rest
 b) Spread
-5. Create a map function to iterate through an array and return it's all values
-
+5. Create a map function to iterate through an array and return it's all values.
+6. Install React starter kit on the system using : https://github.com/facebook/create-react-app.
+7. Run localhost for react starter kit.
