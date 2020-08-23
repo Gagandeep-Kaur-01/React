@@ -9,6 +9,7 @@ import B from './Components/B.js';
 import Validation from './Components/validation.js';
 import Message from './Components/message.js';
 import Calculator from './Components/boiling.js';
+import Routing from './Components/routing.js';
 
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
     const greeting = 'Welcome to React'; 
     return (
       <div className="App">
+         <Routing/> 
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
