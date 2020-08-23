@@ -19,7 +19,8 @@ class App extends Component {
            
             <Register/>
 
-                 
+            <Login value="Login an account" />
+       
       
       </div>
       

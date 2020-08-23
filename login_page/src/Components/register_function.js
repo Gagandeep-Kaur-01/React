@@ -47,7 +47,7 @@ export default function Register(props) {
             </label> 
              <br></br>    <br/>
 
-             <Link to={"/Login"}><button> Register </button>  </Link>         
+             <button ><Link to={"/Login"}> Register  </Link>  </button>       
             </form>  
 
             <Switch>
