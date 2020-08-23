@@ -1,0 +1,50 @@
+
+1. Differentiate between es5, es6, es7.
+2. Create an arrow function that I can run in console to return sum of two numbers.
+3. Create a function that I can run in my console to extract values from an array in destructuring way.
+4. Create two functions showing usage of (...) operator in 2 different ways.
+a) Rest
+b) Spread
+5. Create a map function to iterate through an array and return it's all values.
+6. Install React starter kit on the system using : https://github.com/facebook/create-react-app.
+7. Run localhost for react starter kit.
+8. Replace functional component of App.js with class component.
+9. Read about JSX, Babel, Webpack.
+10. Read about state and props.
+11. Create a login component inside a folder named Components. Export it.
+12. Create two files of login component:
+a) Functional component //donot import it
+b) Class component //import it in app.js
+13. Create username and password as state in LoginComponent(class based).
+14. Create isLogin as state in Appcomponent(app.js).
+Pass this value as prop into LoginComponent.
+15. Read about children props, how to use it.
+Try to Access props as children in your child component.
+16. Read about event binding in React between parent and child.
+17. Read about setState, why we use it and how we use it.
+18. Read about: 
+a) Stateless vs stateful components.
+b) Lists and keys.
+c) Conditional rendering.
+d) useState().
+19. On submit show in browser console the username and password entered as an object
+Example: loginDetails: {username: 'gagan', password: 'qwerty'}
+20. After login, render another component which shows only 'Login Successful', this has to be separate component.
+21. Make a functional component to register.
+Fields: Email, username, password, age.
+Make use of useState for any of these fields for onchange.
+22. Create another component as ValidationComponent
+Inside it create an input field: <input type:"text" />
+Create another header tag inside this component: <h1></h1>
+On changing the value in text area, you should be able to see
+a.) Text too long (if text.length > 10)
+b.) Text too short(if text.length < 10)
+c.) Text Ok(else part)
+
+
+
+
+
+
+
+
