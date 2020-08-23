@@ -47,10 +47,13 @@ export default function Register(props) {
             </label> 
              <br></br>    <br/>
 
-             <Link to={'/Login'}><button> Register </button>  </Link>
-             
+             <Link to={"/Login"}><button> Register </button>  </Link>         
+            </form>  
 
-            </form>            
+            <Switch>
+               <Route path="/Login"></Route>
+               <Login/>
+            </Switch>          
 
         </div>
         </Router>

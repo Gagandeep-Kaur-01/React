@@ -17,10 +17,9 @@ class App extends Component {
             <h1 style={{color: "red"}}>{greeting}</h1>  
 
            
-            <Register1/>
+            <Register/>
 
-            <Login value="Login an account" />
-       
+                 
       
       </div>
       
