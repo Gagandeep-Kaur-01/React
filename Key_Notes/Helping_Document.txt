@@ -1,4 +1,3 @@
-
 1. Differentiate between es5, es6, es7.
 2. Create an arrow function that I can run in console to return sum of two numbers.
 3. Create a function that I can run in my console to extract values from an array in destructuring way.
