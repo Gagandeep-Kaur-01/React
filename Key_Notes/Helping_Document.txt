@@ -40,6 +40,7 @@ On changing the value in text area, you should be able to see
 a.) Text too long (if text.length > 10)
 b.) Text too short(if text.length < 10)
 c.) Text Ok(else part)
+23. Study React Lifecycle Methods. Which ones are deprecated?
 
 
 
