@@ -3,6 +3,10 @@ import Persons from '../Components/Persons.js';
 
 
 class App extends Component {
+  state = {
+    showPersons: false,
+    value: '',
+  };
 
   render() {
 
