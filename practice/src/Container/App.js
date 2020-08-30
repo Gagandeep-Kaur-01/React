@@ -5,6 +5,7 @@ import Persons from '../Components/Persons.js';
 class App extends Component {
   constructor(props) {
     super(props);
+    console.log("[App.js] constructor")
   }
 
 
