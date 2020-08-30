@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 export default function Persons(props) {
+    console.log(props.person);
+
     return(
         <div> 
             <h1>{props.value}</h1>
