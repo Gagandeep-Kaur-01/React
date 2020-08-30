@@ -19,8 +19,8 @@ class App extends Component {
   return (
     <div className="App">      
 
-       <Persons person = {this.state.persons}/>
-       
+       <Persons value="Assignment" person = {this.state.persons}/>
+
     </div>
     );
   }
