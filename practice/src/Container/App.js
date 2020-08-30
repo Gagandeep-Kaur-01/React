@@ -8,6 +8,10 @@ class App extends Component {
     console.log("[App.js] constructor")
   }
 
+  componentWillMount(){
+    console.log("[App.js] componentWillMount")
+  }
+
 
   state = {
     persons: [
