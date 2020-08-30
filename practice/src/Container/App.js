@@ -3,6 +3,11 @@ import Persons from '../Components/Persons.js';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+
   state = {
     persons: [
       { id: 'asfa1', name: 'Max', age: 28 },
