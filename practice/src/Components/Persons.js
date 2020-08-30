@@ -4,7 +4,8 @@ export default function Persons(props) {
     return(
         <div> 
             <h1>{props.value}</h1>
-             
+
+            <h3><b><u>List of Persons:</u></b></h3>             
             <ul>
                {props.person.map((person => 
                 <li key={person.id}>    
