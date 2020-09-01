@@ -40,6 +40,18 @@ a.) Text too long (if text.length > 10)
 b.) Text too short(if text.length < 10)
 c.) Text Ok(else part)
 23. Study React Lifecycle Methods. Which ones are deprecated?
+24. Create an application 'Practice'.
+a) Create two separate folders as: Components and Container inside src.
+b) Move your App.js into Container.
+c) Create a functional component named as Persons.js inside Components folder.
+d) Import this into App.js(which is your class component).
+e) Create a state as mentioned below in App.js(which is your class component).
+f) Create a ul li structure in Persons.js using map on props received as persons from App.js.
+g) In App.js,
+  i. console.log "[App.js] constructor" inside constructor
+ ii. console.log "[App.js] componentWillMount" inside componentWillMount.
+iii. console.log "[App.js] componentDidMount" inside componentDidMount.
+
 
 
 
