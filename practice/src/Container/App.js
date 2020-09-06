@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+
 import Persons from '../Components/Persons.js';
+import Table from '../Components/Table.js'
 
 
 class App extends Component {
@@ -35,6 +37,8 @@ class App extends Component {
     <div className="App">      
 
        <Persons value="Assignment" person = {this.state.persons}/>
+
+       <Table/>
 
     </div>
     );
