@@ -5,7 +5,7 @@ export default function Persons(props) {
 
     return(
         <div> 
-            <h1>{props.value}</h1>
+            <h1 id='hd_tit'>{props.value}</h1>
 
             <h3><b><u>List of Persons:</u></b></h3>             
             <ul>
