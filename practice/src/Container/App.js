@@ -18,7 +18,7 @@ class App extends Component {
     console.log("[App.js] componentDidMount")
   }
 
-
+// state without constructor.....................
   state = {
     persons: [
       { id: 'asfa1', name: 'Max', age: 28 },
@@ -37,7 +37,6 @@ class App extends Component {
     <div className="App">      
 
        <Persons value="Assignment" person = {this.state.persons}/>
-
        <Table/>
 
     </div>
