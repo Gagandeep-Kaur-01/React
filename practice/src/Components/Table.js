@@ -17,11 +17,33 @@ export default class Table extends React.Component {
        }
     }
 
+
+    renderTableData() {
+        return this.state.students.map((student, index) => {
+           const { id, name, age, email } = student //destructuring
+           return (
+              <tr key={id}>
+                 <td>{id}</td>
+                 <td>{name}</td>
+                 <td>{age}</td>
+                 <td>{email}</td>
+              </tr>
+           )
+        })
+     }
+
     
     render() {
        return (
           <div>
              <h3 id='title'><b><u>React Dynamic Table</u></b></h3>
+             <table id='students'>
+                <tbody>
+                   
+                   {this.renderTableData()}
+                   
+                </tbody>
+             </table>   
              
           </div>
        )
