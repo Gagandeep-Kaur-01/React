@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Persons from '../Components/Persons.js';
 import Table from '../Components/Table.js'
+import Api_List from '../Components/Api_List.js'
 
 
 class App extends Component {
@@ -9,6 +10,8 @@ class App extends Component {
     super(props);
     console.log("[App.js] constructor")
   }
+
+  
 
   componentWillMount(){
     console.log("[App.js] componentWillMount")
@@ -38,6 +41,7 @@ class App extends Component {
 
        <Persons value="Assignment" person = {this.state.persons}/>
        <Table/>
+       <Api_List/>
 
     </div>
     );
