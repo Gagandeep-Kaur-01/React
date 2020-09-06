@@ -17,6 +17,13 @@ export default class Table extends React.Component {
        }
     }
 
+    renderTableHeader() {
+        let header = Object.keys(this.state.students[0])
+        return header.map((key, index) => {
+           return <th key={index}>{key.toUpperCase()}</th>
+        })
+     }
+
 
     renderTableData() {
         return this.state.students.map((student, index) => {
@@ -40,8 +47,9 @@ export default class Table extends React.Component {
              <table id='students'>
                 <tbody>
                    
-                   {this.renderTableData()}
-                   
+                <tr>{this.renderTableHeader()}</tr>
+                    {this.renderTableData()}
+
                 </tbody>
              </table>   
              
