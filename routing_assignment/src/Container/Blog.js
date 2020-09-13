@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import { Route, NavLink, Switch } from 'react-router-dom';
 
+import './Blog.css';
+
 class Blog extends Component {
   constructor(props){
-    super(props);
+   super(props);
     
     this.state = {
       data: [],
