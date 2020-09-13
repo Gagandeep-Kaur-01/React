@@ -4,7 +4,8 @@ import { Route, NavLink, Switch } from 'react-router-dom';
 import './Blog.css';
 
 import Persons from '../Components/Persons.js';
-import Table from '../Components/Table.js'
+import Table from '../Components/Table.js';
+import Api_Table from '../Components/Api_table.js';
 
 class Blog extends Component {
   constructor(props){
@@ -65,6 +66,7 @@ class Blog extends Component {
                 <Switch>
                 <Route path="/persons" component={() => <Persons value="Assignment" person={this.state.persons} />} />                                        
                 <Route path="/dyn_table" component={Table} />
+                <Route path="/api_table" component={Api_Table} />
                 </Switch>
             </div>
        
