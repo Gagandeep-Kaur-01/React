@@ -76,11 +76,5 @@ class Blog extends Component {
   }
 }
 
-function select(state) {
-  return {
-     visibleTodos: state.todos
-  }
-}
-
 export default Blog;
   
