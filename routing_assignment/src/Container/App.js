@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import Blog from './Blog';
 
 class App extends Component {
   render () {
