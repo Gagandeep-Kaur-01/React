@@ -54,6 +54,10 @@
          i. console.log "[App.js] constructor" inside constructor
         ii. console.log "[App.js] componentWillMount" inside componentWillMount.
        iii. console.log "[App.js] componentDidMount" inside componentDidMount.
+25. Learn about using APIs React. JSONPlaceholder - Fake online REST API for developers.
+         i. Take API from placeholder and create a table out of it.
+26. Read about Routing and implement the same.
+27. Start to learn about Redux.
 
 
 
