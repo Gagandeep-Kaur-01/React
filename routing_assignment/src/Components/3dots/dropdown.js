@@ -16,7 +16,7 @@ class Dropdown extends Component {
             {/*--three dots menu-- */}
             <div class="dropdown">
                 {/*--three dots--*/}
-                <ul>
+                <ul className="dropbtn icons btn-right">
                     <li></li>
                     <li></li>
                     <li></li>
