@@ -6,6 +6,7 @@ import Api_Table from '../Components/Api_table.js';
 import Api_List from '../Components/Api_List.js';
 import Dropdown from '../Components/3dots/dropdown';
 import './Blog.css';
+
 class Blog extends Component {
   constructor(props){
    super(props);
