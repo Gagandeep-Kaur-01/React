@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import { Route, NavLink, Switch } from 'react-router-dom';
-
-import './Blog.css';
-
 import Persons from '../Components/Persons.js';
 import Table from '../Components/Table.js';
 import Api_Table from '../Components/Api_table.js';
 import Api_List from '../Components/Api_List.js';
-
+import Dropdown from '../Components/3dots/dropdown';
+import './Blog.css';
 class Blog extends Component {
   constructor(props){
    super(props);
@@ -58,6 +56,10 @@ class Blog extends Component {
                                  <li><NavLink to={{
                                 pathname: '/api_list'                                
                             }}>Api_List</NavLink></li>
+
+                               <li><NavLink to={{
+                                pathname: '/dropdown'                                
+                            }}>3dots</NavLink></li>
                            
                         </ul>
                     </nav>
@@ -69,6 +71,7 @@ class Blog extends Component {
                 <Route path="/dyn_table" component={Table} />
                 <Route path="/api_table" component={Api_Table} />
                 <Route path="/api_list" component={Api_List} /> 
+                <Route path="/dropdown" component={Dropdown} /> 
                 </Switch>
             </div>
        
