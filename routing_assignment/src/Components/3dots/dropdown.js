@@ -26,11 +26,18 @@ class Dropdown extends Component {
             {/*--three dots menu-- */}
             <div class="dropdown">
                 {/*--three dots--*/}
-                <ul className="dropbtn icons btn-right">
+                <ul className="dropbtn icons btn-right" onClick={this.showDropdown}>
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
+                {this.state.open && (
+                     <div style={{ float:'right' }} className="dropdown-content">
+                     <a href="#home">Home</a>
+                     <a href="#about">About</a>
+                     <a href="#contact">Contact</a>
+                 </div>   
+                )}
                 
             </div>
             
