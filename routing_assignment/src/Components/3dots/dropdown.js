@@ -3,9 +3,19 @@ import './dropdown.css';
 
 class Dropdown extends Component {
     constructor(props) {
-        super(props);           
-
+        super(props);   
+        this.state = {
+            open: false
+        };       
     }
+
+    showDropdown = () => {
+        this.setState(state=> {
+            return {
+                open: !state.open,
+            };
+        });
+    };
    
 
     render() {
