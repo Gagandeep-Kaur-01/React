@@ -3,20 +3,21 @@ import './dropdown.css';
 
 class Dropdown extends Component {
     constructor(props) {
-        super(props);  
-        this.container = React.createRef(); 
+        super(props);
+        this.container = React.createRef();
         this.state = {
-            open: false
-        };       
-    }
+            open: false,
+        };        
+    }  
 
+   
 /*wire up click listeners on the document for mousedown */
     componentDidMount() {
-       document.addEventListener("mousedown", this.ClickOutside);
+        document.addEventListener("mousedown", this.ClickOutside);
     }
     componentWillUnmount() {
-       document.removeEventListener("mousedown", this.ClickOutside);
-    }     
+        document.removeEventListener("mousedown", this.ClickOutside);
+    } 
 
     showDropdown = () => {
         this.setState(state=> {
@@ -24,9 +25,9 @@ class Dropdown extends Component {
                 open: !state.open,
             };
         });
-    };
+    };   
 
-    /* showDropdown = () => {
+   /* showDropdown = () => {
         this.setState({
             open: true,
         }) , () => {
@@ -39,7 +40,7 @@ class Dropdown extends Component {
         this.setState({ openDropdown: false }, () => {
           document.removeEventListener('click', this.closeMenu);
         });
-    } */  
+    } */    
 
     ClickOutside = (event) => {   
         if (this.container.current && !this.container.current.contains(event.target)) {     
@@ -48,29 +49,34 @@ class Dropdown extends Component {
             });
         }
     };
-   
 
     render() {
-
     return(
         <div className="header" ref={this.container}>
 
             {/*--three dots menu-- */}
             <div class="dropdown">
                 {/*--three dots--*/}
-                <ul className="dropbtn icons btn-right" onClick={this.showDropdown} >
+              {/* <ul className="dropbtn icons btn-right" onClick={this.showDropdown}>
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul>
+                  </ul> */}
+                <button class="button" onClick={this.showDropdown}>
+                  ☰
+                </button>
+
                 {this.state.open && (
-                     <div style={{ float:'right' }} className="dropdown-content">
+                    <div className="dropdown-content">
                      <a href="#home">Home</a>
                      <a href="#about">About</a>
                      <a href="#contact">Contact</a>
-                 </div>   
+                    {/* <ul>
+                         <li href="#home">Home</li>
+                         <li href="#about">About</li>
+                        </ul> */}
+                    </div>   
                 )}
-                
             </div>
             
         </div>
