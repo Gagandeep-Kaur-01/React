@@ -25,6 +25,29 @@ class Dropdown extends Component {
             };
         });
     };
+
+    /* showDropdown = () => {
+        this.setState({
+            open: true,
+        }) , () => {
+            document.addEventListener('click', this.closeDropdown);
+          });
+         // event.preventDefault(); 
+        };   
+
+   closeDropdown = () => {
+        this.setState({ openDropdown: false }, () => {
+          document.removeEventListener('click', this.closeMenu);
+        });
+    } */  
+
+    ClickOutside = (event) => {   
+        if (this.container.current && !this.container.current.contains(event.target)) {     
+            this.setState({
+                open: false,
+            });
+        }
+    };
    
 
     render() {
