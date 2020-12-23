@@ -3,7 +3,8 @@ import './dropdown.css';
 
 class Dropdown extends Component {
     constructor(props) {
-        super(props);   
+        super(props);  
+        this.container = React.createRef(); 
         this.state = {
             open: false
         };       
@@ -21,7 +22,7 @@ class Dropdown extends Component {
     render() {
 
     return(
-        <div className="header">
+        <div className="header" ref={this.container}>
 
             {/*--three dots menu-- */}
             <div class="dropdown">
