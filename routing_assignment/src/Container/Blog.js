@@ -61,7 +61,7 @@ class Blog extends Component {
 
                                <li><NavLink to={{
                                 pathname: '/dropdown'                                
-                            }}>3dots</NavLink></li>
+                            }}>Dropdown</NavLink></li>
 
                                <li><NavLink to={{
                                 pathname: '/styled_component'                                
