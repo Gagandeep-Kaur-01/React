@@ -10,6 +10,14 @@ class Dropdown extends Component {
         };       
     }
 
+/*wire up click listeners on the document for mousedown */
+    componentDidMount() {
+       document.addEventListener("mousedown", this.ClickOutside);
+    }
+    componentWillUnmount() {
+       document.removeEventListener("mousedown", this.ClickOutside);
+    }     
+
     showDropdown = () => {
         this.setState(state=> {
             return {
