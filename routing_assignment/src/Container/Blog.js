@@ -5,6 +5,7 @@ import Table from '../Components/Table.js';
 import Api_Table from '../Components/Api_table.js';
 import Api_List from '../Components/Api_List.js';
 import Dropdown from '../Components/3dots/dropdown';
+import Text from '../Components/Styled_Component.js';
 import './Blog.css';
 
 class Blog extends Component {
@@ -61,6 +62,10 @@ class Blog extends Component {
                                <li><NavLink to={{
                                 pathname: '/dropdown'                                
                             }}>3dots</NavLink></li>
+
+                               <li><NavLink to={{
+                                pathname: '/styled_component'                                
+                            }}>Styled_Component</NavLink></li>
                            
                         </ul>
                     </nav>
@@ -73,6 +78,7 @@ class Blog extends Component {
                 <Route path="/api_table" component={Api_Table} />
                 <Route path="/api_list" component={Api_List} /> 
                 <Route path="/dropdown" component={Dropdown} /> 
+                <Route path="/styled_component" component={() => <Text palette="secondary">Hello</Text> }/> 
                 </Switch>
             </div>
        
