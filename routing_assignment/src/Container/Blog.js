@@ -3,6 +3,7 @@ import { Route, NavLink, Switch } from 'react-router-dom';
 import Persons from '../Components/Persons.js';
 import Table from '../Components/Table.js';
 import Api_Table from '../Components/Api_table.js';
+import Api_function from '../Components/Api_function.js';
 import Api_List from '../Components/Api_List.js';
 import Dropdown from '../Components/3dots/dropdown';
 import Text from '../Components/Styled_Component.js';
@@ -66,6 +67,12 @@ class Blog extends Component {
                                <li><NavLink to={{
                                 pathname: '/styled_component'                                
                             }}>Styled_Component</NavLink></li>
+
+                              <li><NavLink to={{
+                                pathname: '/Api_function'                                
+                            }}>Api_function</NavLink></li>
+
+
                            
                         </ul>
                     </nav>
@@ -79,6 +86,8 @@ class Blog extends Component {
                 <Route path="/api_list" component={Api_List} /> 
                 <Route path="/dropdown" component={Dropdown} /> 
                 <Route path="/styled_component" component={() => <Text palette="secondary">Hello</Text> }/> 
+                <Route path="/Api_function" component={Api_function} />
+                
                 </Switch>
             </div>
        
